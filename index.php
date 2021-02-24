@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+session_start();
 $login_error_message = '';
 $conn = DB();
 
