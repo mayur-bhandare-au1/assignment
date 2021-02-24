@@ -2,6 +2,7 @@
 include 'config.php';
 session_start();
 $login_error_message = '';
+$userid = '';
 $conn = DB();
 
 if (!empty($_POST['btnLogin']))
@@ -81,7 +82,7 @@ if ($login_error_message != "")
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
-                                <input type="text" name="password" id="password" class="form-control" required>
+                                <input type="password" name="password" id="password" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="btnLogin" class="btn btn-info btn-md" value="submit">

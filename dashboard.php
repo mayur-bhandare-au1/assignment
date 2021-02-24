@@ -36,7 +36,15 @@ else
 
 <div class="container-fluid pt-3">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-11">
+            <h1 class="text-center">Welcome to Dashboard !</h1>
+        </div>
+        <div class="col-md-1">
+            <a href="logout.php" class="btn btn-link">Logout</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
             <div class="list-group">
                 <?php if ($utype == 0)
 { ?>
@@ -68,7 +76,7 @@ else
 } ?>
 </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div class="jumbotron bg-white card card-block">
                 <h2>
                Hi <?php echo $firstname ?>
